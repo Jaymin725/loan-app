@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan App</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Loan App
+    </h1>
+  </header>
+  <hr>
+  <main>
+    <label for="amount">Amount :</lable>
+    <input type="number" id="amount" name="amount" placeholder="Enter your amount">
+    <br>
+
+    <label for="duration">
+      <select name="duration-type" id="duration-type">
+        <option value="years">Years</option>
+        <option value="months">Months</option>
+      </select> :
+    </label>
+    <input type="number" id="duration" name="duration" placeholder="Enter your duration">
+    <br>
+    <input type="range" name="duration" min="1" max="12"> 
+    <br>
+
+    <select name="loan-type" id="loan-type">
+      <option value="none">Select loan type</option>
+      <option value="11">Car</option>
+      <option value="18">Personal</option>
+      <option value="9">Home</option>
+    </select>
+    <br>
+
+    <button type="button">Calculate Interest</button>
+
+    <span id="interest"></span>
+  </main>
+</body>
+
+</html>
